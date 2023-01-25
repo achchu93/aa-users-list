@@ -25,3 +25,5 @@ if ( ! defined( 'WPINC' ) ) {
 define( 'AA_USERS_LIST_FILE', __FILE__ );
 
 require 'vendor/autoload.php';
+
+UsersList::instance();
