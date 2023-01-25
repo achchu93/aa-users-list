@@ -17,7 +17,6 @@
 
 namespace AhamedArshad\UsersList;
 
-
 if ( ! defined( 'WPINC' ) ) {
 	die;
 }
