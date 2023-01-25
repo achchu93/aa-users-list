@@ -6,6 +6,10 @@
  * @since 1.0.0
  */
 
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
+
 $rest       = new \AhamedArshad\UsersList\Rest();
 $table_data = $rest->getTable();
 

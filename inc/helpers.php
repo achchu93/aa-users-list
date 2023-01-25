@@ -5,6 +5,10 @@
  * @package AhamedArshad\UsersList
  */
 
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
+
 /**
  * Get view by name
  *

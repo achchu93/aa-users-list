@@ -8,6 +8,10 @@
 
 namespace AhamedArshad\UsersList;
 
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
+
 /**
  * Rest API class
  *

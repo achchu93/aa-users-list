@@ -8,6 +8,10 @@
 
 namespace AhamedArshad\UsersList\Api;
 
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
+
 /**
  * Table API class
  *
