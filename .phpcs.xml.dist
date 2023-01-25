@@ -2,6 +2,8 @@
 <ruleset name="Users Table Rules">
 	<rule ref="10up-Default" />
 
+	<exclude-pattern>build</exclude-pattern>
+
 	<rule ref="WordPress.NamingConventions.ValidVariableName">
 		<exclude-pattern>.</exclude-pattern>
 	</rule>

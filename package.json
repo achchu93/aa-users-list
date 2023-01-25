@@ -1,0 +1,18 @@
+{
+  "name": "aa-users-list",
+  "version": "1.0.0",
+  "description": "A simple users list.",
+  "scripts": {
+    "start": "wp-scripts start --webpack-src-dir=assets/blocks --output-path=build/blocks",
+    "build": "wp-scripts build --webpack-src-dir=assets/blocks --output-path=build/blocks"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/achchu93/aa-users-list.git"
+  },
+  "author": "Ahamed Arshad",
+  "license": "GPL-2.0",
+  "devDependencies": {
+    "@wordpress/scripts": "^25.2.0"
+  }
+}

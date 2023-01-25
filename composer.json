@@ -5,7 +5,8 @@
     "autoload": {
         "psr-4": {
             "AhamedArshad\\UsersList\\": "src/"
-        }
+        },
+		"files": [ "inc/helpers.php" ]
     },
     "authors": [
         {

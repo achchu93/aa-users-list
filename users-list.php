@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Users List
- * Description:       A users list based on API.
+ * Description:       A simple users list.
  * Version:           1.0.0
  * Requires at least: 5.0
  * Requires PHP:      7.2

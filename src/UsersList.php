@@ -32,6 +32,7 @@ class UsersList {
 	 */
 	public function __construct() {
 		new Rest();
+		new Blocks();
 	}
 
 	/**
@@ -46,5 +47,15 @@ class UsersList {
 		}
 
 		return self::$instance;
+	}
+
+	/**
+	 * Get plugin directory path
+	 *
+	 * @return string
+	 * @since 1.0.0
+	 */
+	public function pluginDirPath(): string {
+		return plugin_dir_path( AA_USERS_LIST_FILE );
 	}
 }

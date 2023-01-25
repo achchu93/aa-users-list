@@ -1,0 +1,19 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "aa-users-list/table",
+	"title": "Users Table",
+	"textdomain": "aa-userslist",
+	"attributes": {
+		"columns": {
+			"type": "array",
+			"default": [
+				"id", "fname", "lname", "email", "date"
+			]
+		}
+	},
+	"icon": "editor-table",
+	"category": "widgets",
+	"editorScript": "file:../../../build/blocks/index.js",
+	"style": "file:../../../build/blocks/index.css"
+}
