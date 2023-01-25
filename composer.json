@@ -1,0 +1,28 @@
+{
+    "name": "ahamedarshad/aa-users-list",
+    "description": "WordPress coding challenge for Awesome Motive",
+    "type": "wordpress-plugin",
+    "autoload": {
+        "psr-4": {
+            "AhamedArshad\\UsersList\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ahamed Arshad",
+            "email": "achchu.zats@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">= 7.2"
+	},
+    "require-dev": {
+        "10up/phpcs-composer": "dev-master",
+        "squizlabs/php_codesniffer": "^3.7"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
