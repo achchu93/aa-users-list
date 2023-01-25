@@ -33,6 +33,7 @@ class UsersList {
 	public function __construct() {
 		new Rest();
 		new Blocks();
+		new CLI();
 	}
 
 	/**
