@@ -11,15 +11,14 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 $rest       = new \AhamedArshad\UsersList\Rest();
-$table_data = $rest->getTable();
+$table_data = \aaul_get_users_list();
 
 if ( ! is_array( $table_data ) || ! isset( $attributes['columns'] ) ) {
 	return;
 }
 
-$table_data    = json_decode( wp_json_encode( $table_data ), true );
 $table_headers = $table_data['data']['headers'];
-$table_rows    = (array) array_values( $table_data['data']['rows'] );
+$table_rows    = array_values( $table_data['data']['rows'] );
 $header_data   = [];
 
 foreach ( array_keys( $table_rows[0] ) as $index => $key ) {

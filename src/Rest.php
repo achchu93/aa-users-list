@@ -70,24 +70,12 @@ class Rest {
 	 */
 	public function getTable() {
 
-		$cachedData = get_transient( self::TABLE_TRANSIENT );
+		$table_data = \aaul_get_users_list();
 
-		if ( false !== $cachedData ) {
-			return $cachedData;
+		if ( is_wp_error( $table_data ) ) {
+			return $table_data;
 		}
 
-		try {
-			$table = new Api\Table();
-			$data  = $table->fetch();
-
-			set_transient( self::TABLE_TRANSIENT, $data, HOUR_IN_SECONDS );
-
-			return new \WP_REST_Response( $data, 200 );
-
-		} catch ( \Exception $ex ) {
-
-			return new \WP_Error( $ex->getCode(), $ex->getMessage() );
-		}
-
+		return new \WP_REST_Response( $data );
 	}
 }
