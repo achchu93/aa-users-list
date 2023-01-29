@@ -44,7 +44,7 @@ class CLI {
 
 		$transient_name = \AhamedArshad\UsersList\Rest::TABLE_TRANSIENT;
 
-		if ( $assoc_args['dry-run'] ) {
+		if ( isset( $assoc_args['dry-run'] ) ) {
 
 			$timeout = get_option( '_transient_timeout_' . $transient_name );
 
