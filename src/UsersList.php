@@ -34,6 +34,7 @@ class UsersList {
 		new Rest();
 		new Blocks();
 		new CLI();
+		new Admin\Admin();
 	}
 
 	/**
