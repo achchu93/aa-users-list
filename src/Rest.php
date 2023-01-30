@@ -76,6 +76,6 @@ class Rest {
 			return $table_data;
 		}
 
-		return new \WP_REST_Response( $data );
+		return new \WP_REST_Response( $table_data );
 	}
 }
