@@ -13,7 +13,7 @@ namespace AhamedArshad\UsersList\Admin;
  *
  * @package AhamedArshad\UsersList
  */
-class Admin  {
+class Admin {
 
 	/**
 	 * Setup admin functions

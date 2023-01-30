@@ -40,7 +40,7 @@ class CLI {
 	 * @param array $args Arguments
 	 * @param array $assoc_args Flag arguments
 	 */
-	public function clear( array $args,  array $assoc_args ) {
+	public function clear( array $args, array $assoc_args ) {
 
 		$transient_name = \AhamedArshad\UsersList\Rest::TABLE_TRANSIENT;
 
@@ -55,8 +55,8 @@ class CLI {
 
 				if ( $timeLeft > 0 ) {
 					\WP_CLI::success(
-						/* translators: %d minutes left */
 						sprintf(
+							/* translators: %d minutes left */
 							esc_html__( 'You have a cache with %d mins left. Run command without `--dry-run` to clear it.', '' ),
 							intval( $timeLeft )
 						)

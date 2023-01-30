@@ -20,6 +20,8 @@ if ( ! defined( 'WPINC' ) ) {
 class UsersList {
 
 	/**
+	 * Hold the instance of plugin main class
+	 *
 	 * @var null|UsersList $instance Plugin instance
 	 * @since 1.0.0
 	 */

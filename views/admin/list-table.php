@@ -5,6 +5,7 @@
  * @package AhamedArshad\UsersList
  * @since 1.0.0
  */
+
 ?>
 <div class="wrap">
 	<h2><?php echo esc_html( $table->get_table_title() ); ?></h2>
